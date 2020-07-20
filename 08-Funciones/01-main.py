@@ -68,5 +68,57 @@ def getEmpleado(name, ndi = None):
         print(f"{ndi}")
 getEmpleado("John")
 
+#---------------------------   Ejemplo 4.1 ------------------
+
+print("\n ############ Ejemplo 4 - OFERTA DE EMPLEO TELEGRAM")
+
+oferta = input("Cual es tu oferta de Empleo: ")
+def publicarEmpleo(oferta = None):
+        while oferta != None:
+                print(f"Oferta laboral para Developers: {oferta}")
+                oferta = None
+publicarEmpleo(oferta)
+
+#---------------------------   Ejemplo 5 ------------------
+
+print("\n ############ Ejemplo 5 - Return")
+def saludame(saludo):
+        name = f"Hola {saludo}"
+
+        return name
+print(saludame("Juan"))
+
+#---------------------------   Ejemplo 6 ------------------
+
+print("\n ############ Ejemplo 6 - Return")
+def calculadora(n1,n2, operation = False):
+        suma = n1 + n2
+        resta = n1 - n2
+        multi = n1 * n2
+        divi = n1 / n2
+
+        cadena =""
+
+        if operation != False:
+                cadena += "Suma: " + str(suma)
+                cadena += "\n"
+                cadena += "Resta: " + str(resta)
+                cadena += "\n"
+        else:
+                cadena += "Multiplicacion: " + str(multi)
+                cadena += "\n"
+                cadena += "Division : " + str(divi)
+                cadena += "\n"
+
+        return cadena
+print(calculadora(2,2, True))
+
+         
+
+
+
+
+
+
 
 
