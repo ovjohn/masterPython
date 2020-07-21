@@ -10,7 +10,7 @@ def nombrePersona(parametros)
 
 #Para llamarla se hace así: nombrePersona(mi-parametro)
 """
-
+"""
 #------------------ -----------------------Ejemplo1 -------------------
 print("############ Ejemplo 1 - Funciones")
 
@@ -69,7 +69,6 @@ def getEmpleado(name, ndi = None):
 getEmpleado("John")
 
 #---------------------------   Ejemplo 4.1 ------------------
-
 print("\n ############ Ejemplo 4 - OFERTA DE EMPLEO TELEGRAM")
 
 oferta = input("Cual es tu oferta de Empleo: ")
@@ -80,7 +79,6 @@ def publicarEmpleo(oferta = None):
 publicarEmpleo(oferta)
 
 #---------------------------   Ejemplo 5 ------------------
-
 print("\n ############ Ejemplo 5 - Return")
 def saludame(saludo):
         name = f"Hola {saludo}"
@@ -89,7 +87,6 @@ def saludame(saludo):
 print(saludame("Juan"))
 
 #---------------------------   Ejemplo 6 ------------------
-
 print("\n ############ Ejemplo 6 - Return")
 def calculadora(n1,n2, operation = False):
         suma = n1 + n2
@@ -112,6 +109,23 @@ def calculadora(n1,n2, operation = False):
 
         return cadena
 print(calculadora(2,2, True))
+"""
+#---------------------------   Ejemplo 6 ------------------
+print("\n ############ Ejemplo 7 - Funciones dentro de otras Funciones")
+ 
+def getName(name):
+         text = f"Tu monbres es: {name}"
+         return(text)
+
+def getLastname(lastname):
+        text = f"Your Last Name is: {lastname}"
+        return(text)
+
+def getAll(name,lastname):
+        text = getName(name) + "\n" + getLastname(lastname)
+        return(text)
+
+print(getAll("JOhn","Oli"))
 
          
 
