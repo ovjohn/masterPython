@@ -110,7 +110,7 @@ def calculadora(n1,n2, operation = False):
         return cadena
 print(calculadora(2,2, True))
 """
-#---------------------------   Ejemplo 6 ------------------
+#---------------------------   Ejemplo 7 ------------------
 print("\n ############ Ejemplo 7 - Funciones dentro de otras Funciones")
  
 def getName(name):
@@ -125,9 +125,14 @@ def getAll(name,lastname):
         text = getName(name) + "\n" + getLastname(lastname)
         return(text)
 
-print(getAll("JOhn","Oli"))
+print(getAll("John","Oli"))
 
-         
+#------------------------ Ejemplo 8 ----------------------------
+print("\n ################# Ejemplo 8 - Funcion lambda ")
+
+get_year = lambda year: f"Dime el año: {year}" #Funcion anonima lambda - Se bede hacer en una sola linea
+
+print(get_year(2020))
 
 
 
