@@ -14,7 +14,14 @@ variadas = ["string", 2.2, 7, True]
 #print(f"Primera lista: {pelicula},Segunda lista: {canciones}, Tercera lista: {variadas}")
 
 #Indices
+canciones[2] = "New Movie"#Cambio de la pelicula en indice 2
+
 pelicula[1] = "New Pelicula" # Modificar el elemento Uno de la lista
 print(pelicula[1]) #Por numero d Indice
 print(canciones[0:2])# Por rango
-print(pelicula)
+print(pelicula[1:])# Apartir del indice 1 hasta el final
+print(canciones)
+
+#Añadir elementos a una lista
+canciones.append("Fly to the Moon")
+print(canciones)
