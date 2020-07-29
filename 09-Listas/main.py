@@ -25,3 +25,13 @@ print(canciones)
 #Añadir elementos a una lista
 canciones.append("Fly to the Moon")
 print(canciones)
+
+#Recorrer Lista
+new_movie = ""
+while new_movie != "stop":
+    new_movie = input("Introduce Nueva Pelicula: ")
+    if new_movie != "stop":
+        pelicula.append(new_movie)
+print("\n**********Listas de Canciones***********")
+for x in pelicula:
+    print(f"{pelicula.index(x)}. {x}")
