@@ -3,7 +3,7 @@ LISTAS (arrays).
 Son una coleccion de datos/valores, bajo un unico nombre.
 Para acceder a esos valores, podemos usar u indice númerico.
 """
-
+"""
 pelicula = "Batman"
 
 #Definir Lista
@@ -35,3 +35,19 @@ while new_movie != "stop":
 print("\n**********Listas de Canciones***********")
 for x in pelicula:
     print(f"{pelicula.index(x)}. {x}")
+"""
+#Listas Multidimencionales
+print("**********Lista de contactos**************")
+contactos = [
+    ["Juan","juan@email.com"],
+    ["David","david@email.com"],
+    ["Sergio","segio@email.com"]
+]
+for contacto in contactos:
+    for atributo in contacto:
+        if contacto.index(atributo) == 0:
+            print(f"El nombre es: {atributo}")
+        else:
+            print(f"El Email es: {atributo}")
+    print("\n")
+
