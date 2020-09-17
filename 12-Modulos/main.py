@@ -13,5 +13,16 @@ from mimodulo import *
 
 #print(mimodulo.holaMundo("John")) #Utilizando el la funcion holaMundo del Modulo
 #print(mimodulo.calculadora(2,4,False)) # Utilizando otra funcion
+#print(holaMundo("Juan Jose"))
 
-print(holaMundo("Juan Jose"))
+#Modulo fechas
+import datetime
+
+print(datetime.date.today())
+
+fecha_completa = datetime.datetime.now()
+print(fecha_completa)
+print(fecha_completa.day)
+print(fecha_completa.month)
+print(fecha_completa.year)
+print(fecha_completa.strftime("%d/%m/%Y, %H-%M-%S"))
