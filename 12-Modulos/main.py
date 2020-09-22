@@ -26,3 +26,14 @@ print(fecha_completa.day)
 print(fecha_completa.month)
 print(fecha_completa.year)
 print(fecha_completa.strftime("%d/%m/%Y, %H-%M-%S"))
+
+#Modulo Matematica
+import math
+print("La Raiz cuadrada de 10 es:", math.sqrt(10))
+print("Numero pi:", float(math.pi))
+print("Rendondiar un numero:", math.ceil(12.457))
+
+#Modulo Aleatorio
+import random
+
+print("Numero aleatorio entre 2 y 9 es:", random.randint(2,9))
