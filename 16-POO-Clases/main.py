@@ -58,7 +58,7 @@ print("Ahora el color es: ", coche.getColor())
 
 print("_________---------------------")
 
-coche2 = Coche()
+coche2 = Coche()#Creando el Objeto Coche-2
 coche2.setColor("Azul")
 coche2.setMarca("Toyota")
 coche2.setModelo("Terio")
