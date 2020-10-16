@@ -8,6 +8,9 @@ class Coche:
     caballaje = 1000
     plaza = 2
 
+    soy_publico = "Hola soy una Variable Publica"
+    __soy_privada = "Soy una variable privada"
+
     #Definiendo el Costructor
     def __init__(self,color,marca,modelo,velocidad,caballaje,plaza):
         self.color = color
@@ -51,5 +54,9 @@ class Coche:
         info += "\n Modelo: "+ self.getModelo()
         info += "\n Color: "+ self.getColor()
         info += "\n Velocidad: "+ str(self.getVelocidad())
-        return info   
+        return info
+
+    def getPrivada(self):
+        return self.__soy_privada
+
     #Fin definicion de la clase
